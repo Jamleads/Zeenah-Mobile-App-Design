@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- tailwind CSS -->
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- Tailwind confiq -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainPurple: "#6A0E95",
+              lightPurple: "#791FA40D",
+              lightPurple2: "#F3E8F7",
+              textWhite: "#FFFFFF",
+              smallWhite: "#DADADA",
+              bgWhite: "#FAF7FB",
+              lightGreen: "#50BD680F",
+              lightBlue: "#229ED90F",
+              lightYellow: "#FFB900",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Zeenah</title>
+  </head>
+
+  <body class="express-deposit2">
+    <div class="container bg-bgWhite p-5 blur-section">
+      <h2 class="flex font-bold items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="h-10 w-10 transform rotate-90"
+        >
+          <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+        </svg>
+        ZeenahPay
+      </h2>
+
+      <div>
+        <small class="font-light">Select currency and enter amount</small>
+        <div class="input-amount flex px-3 py-2 rounded-2xl border-2">
+          <div class="currency-select">
+            <select
+              name=""
+              id=""
+              class="ml-auto py-2 bg-textWhite px-8 rounded-2xl border-0"
+            >
+              <option value="NGN">NGN</option>
+              <option value="USD">USD</option>
+              <option value="GBP">GBP</option>
+            </select>
+          </div>
+
+          <input
+            type="number"
+            placeholder="0.0"
+            style="width: 70%"
+            class="bg-transparent outline-0 border-0 text-smallWhite font-bold"
+          />
+        </div>
+
+        <div class="text-right px-3 mb-5">
+          <p class="font-thin">
+            You recieve <span class="font-bold">~0.00 NGN</span>
+          </p>
+          <p class="font-thin text-right">
+            Available <span class="font-bold">100,000 NGN</span>
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center justify-between bg-textWhite px-3 py-2 mb-5 rounded-2xl"
+      >
+        <p class="text-sm">Preferred payment method:</p>
+        <button class="bg-mainPurple px-4 py-2 text-textWhite rounded-2xl">
+          Add &rarr;
+        </button>
+      </div>
+
+      <div class="grid gap-3 grid-cols-3 items-center">
+        <button class="p-3 bg-lightPurple2 gateway">Wire</button>
+        <button class="p-3 bg-lightPurple2 gateway">Palmpay</button>
+        <button class="bg-lightPurple2 gateway">Bank transfer</button>
+      </div>
+
+      <div class="grid my-10">
+        <button class="deposit p-4 bg-mainPurple rounded-2xl text-textWhite">
+          Deposit
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="connection text-center p-5 rounded-t-3xl drop-shadow-2xl sticky button-0 hide"
+    >
+      <h3 class="mt-10">Connecting to an agent</h3>
+      <div class="my-3">
+        <div class="w-full p-1 bg-mainPurple rounded-2xl"></div>
+      </div>
+      <p>Payment will proceed once the agent accepts your offer</p>
+      <button class="cancel p-2 border-2 rounded-3xl">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </button>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/fc49c28ef9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

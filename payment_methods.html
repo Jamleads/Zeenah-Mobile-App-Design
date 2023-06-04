@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- tailwind CSS -->
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- Tailwind confiq -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainPurple: "#6A0E95",
+              lightPurple: "#791FA40D",
+              lightPurple2: "#F3E8F7",
+              textWhite: "#FFFFFF",
+              smallWhite: "#DADADA",
+              bgWhite: "#FAF7FB",
+              lightGreen: "#50BD680F",
+              lightBlue: "#229ED90F",
+              lightYellow: "#FFB900",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Zeenah</title>
+  </head>
+
+  <body class="payment-method">
+    <div class="container bg-bgWhite p-5">
+      <h2>Payment method</h2>
+      <small class="font-thin">You can choose up to 5</small>
+
+      <div class="gatway-count my-5">
+        <div class="grid grid-cols-2 gap-3 mb-3">
+          <button class="p-3 bg-lightPurple2 gateway">Bank transfer</button>
+          <button class="p-3 bg-lightPurple2 gateway chose">PayPal</button>
+          <button class="p-3 bg-lightPurple2 gateway">Payoneer</button>
+          <button class="p-3 bg-lightPurple2 gateway">Cash app</button>
+          <button class="p-3 bg-lightPurple2 gateway">NETELLER</button>
+          <button class="p-3 bg-lightPurple2 gateway">Stripe</button>
+          <button class="p-3 bg-lightPurple2 gateway">Palmpay</button>
+          <button class="p-3 bg-lightPurple2 gateway">Chipper Cash</button>
+          <button class="p-3 bg-lightPurple2 gateway">Wise</button>
+          <button class="p-3 bg-lightPurple2 gateway">Tempo</button>
+        </div>
+        <small class="font-thin"
+          >Only available payment methods are displayed</small
+        >
+      </div>
+
+      <div class="grid">
+        <button class="p-4 bg-mainPurple rounded-2xl text-smallWhite">
+          Continue
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/fc49c28ef9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
