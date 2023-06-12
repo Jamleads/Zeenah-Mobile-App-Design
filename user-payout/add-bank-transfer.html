@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- tailwind CSS -->
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- Tailwind confiq -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainPurple: '#6A0E95',
+              lightPurple: '#791FA40D',
+              lightPurple2: '#F3E8F7',
+              textWhite: '#FFFFFF',
+              smallWhite: '#DADADA',
+              bgWhite: '#FAF7FB',
+              lightGreen: '#50BD680F',
+              lightBlue: '#229ED90F',
+              lightYellow: '#FFB900',
+              lightYellow2: '#2F2827',
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Zeenah/Add-Bank-transfer</title>
+  </head>
+
+  <body class="add-Bank-transfer">
+    <div class="container bg-bgWhite p-5 blur-section2">
+      <h2 class="mt-3 mb-5 font-bold text-2xl">
+        &larr; <span class="ml-3">Add Bank Transfer</span>
+      </h2>
+
+      <form action="">
+        <label for="Name" class="ml-3">Name</label><br />
+        <input
+          type="text"
+          placeholder="Enter your account name"
+          class="w-full bg-transparent px-5 py-4 rounded-xl mb-5"
+        />
+
+        <label for="Bank account number" class="ml-3">Bank account number</label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter your bank account number"
+          class="w-full bg-transparent px-5 py-4 rounded-xl mb-5"
+        />
+
+        <label for="Bank name" class="ml-3">Bank name</label><br />
+        <input
+          type="text"
+          placeholder="Enter name of your bank"
+          class="w-full bg-transparent px-5 py-4 rounded-xl mb-5"
+        />
+
+        <label for="Email" class="ml-3">Email</label><br />
+        <input
+          type="text"
+          placeholder="Email"
+          class="w-full bg-transparent px-5 py-4 rounded-xl mb-5"
+        />
+
+        <label for="Phone number" class="ml-3">Phone number</label><br />
+        <input
+          type="text"
+          placeholder="Phone number"
+          class="w-full bg-transparent px-5 py-4 rounded-xl mb-5"
+        />
+      </form>
+
+      <div class="p-2 bg-lightYellow2 font-light rounded-xl mt-10 my-3">
+        <p class="text-lightYellow">
+          The added payment method will be shown to the agent during the
+          transaction, please ensure that the information is real and matches
+          your choice of payout.
+        </p>
+      </div>
+
+      <div>
+        <button
+          class="confirm w-full rounded-2xl bg-mainPurple p-3 text-textWhite"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+
+    <div class="enter-pin hide bg-smallWhite border-2 p-5 rounded-2xl">
+      <p class="cancel2 text-end text-3xl">&times;</p>
+
+      <div class="text-center">
+        <h2>Enter Zeenah PIN</h2>
+        <p class="font-light">To confirm beneficiary</p>
+      </div>
+
+      <div class="grid gap-5 grid-cols-4 px-10 py-5">
+        <div class="p-5 border-2 bg-textWhite"></div>
+        <div class="p-5 border-2 bg-textWhite"></div>
+        <div class="p-5 border-2 bg-textWhite"></div>
+        <div class="p-5 border-2 bg-textWhite"></div>
+      </div>
+
+      <div class="show-password">
+        <i class="fa-regular fa-eye eye-icon"></i>
+      </div>
+
+      <div class="text-center text-mainPurple text-xl">
+        <a href="#">Forgot PIN?</a>
+      </div>
+
+      <div
+        class="keys grid grid-cols-3 gap-4 py-5 text-2xl bg-textWhite rounded-2xl my-5"
+      >
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button></button>
+        <button>0</button>
+        <button><i class="fa-solid fa-delete-left"></i></button>
+      </div>
+    </div>
+  </body>
+
+  <script src="/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/fc49c28ef9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

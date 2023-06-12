@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- tailwind CSS -->
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- Tailwind confiq -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainPurple: "#6A0E95",
+              lightPurple: "#791FA40D",
+              lightPurple2: "#F3E8F7",
+              textWhite: "#FFFFFF",
+              smallWhite: "#DADADA",
+              bgWhite: "#FAF7FB",
+              lightGreen: "#50BD680F",
+              lightBlue: "#229ED90F",
+              lightYellow: "#FFB900",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Zeenah/Payout-method</title>
+  </head>
+
+  <body class="">
+    <div class="container bg-bgWhite p-5">
+      <h2 class="mt-3 mb-5 font-bold text-2xl">
+        &larr; <span class="ml-3">Payout method</span>
+      </h2>
+
+      <div class="grid gap-5">
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>In-person</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Bank Transfer</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>PayPal</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Payoneer</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Cash app</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>NETELLER</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Stripe</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Palmpay</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Chipper Cash</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+
+        <div
+          class="pl-7 pr-3 py-3 bg-lightPurple2 rounded-2xl flex items-center justify-between"
+        >
+          <p>Wise</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-10 w-10 transform -rotate-90"
+          >
+            <path fill-rule="evenodd" d="M10 12l-5-5h10l-5 5z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="/script.js"></script>
+</html>
