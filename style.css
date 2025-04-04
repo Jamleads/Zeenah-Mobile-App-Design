@@ -3,6 +3,11 @@
   cursor: pointer;
 }
 
+body {
+  max-width: 488px;
+  margin: 0 auto;
+  display: block;
+}
 .carousel {
   max-width: 600px;
   overflow: hidden;
